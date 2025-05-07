@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Short Speech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #e6f7ff;
+    }
+    h1 {
+      background: #0074D9;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    h2 {
+      margin-top: 20px;
+      color: #333;
+      text-align: center;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #cceeff;
+    }
+    button {
+      padding: 6px 12px;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>
+    সুপার সাক্সেস কম্পিউটার এডুকেশন সেন্টার<br>
+    ২২/১ বিপিন পাল রোড, নিমতা শ্যামাপ্রসাদ নগর, কোলকাতা-৭০০০৪৯<br>
+    📞 ৮০১৭২৪৭২৯৮ | ৯৮৭৪১৫২০৮০
+  </h1>
+
+  <h2>📘 Short Speech (English with 🔊 Sound)</h2>
+
+  <table>
+    <tr><th>Line</th><th>Sound</th></tr>
+
+    <tr><td>Good morning everyone!</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>Today I have come to give a short speech.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>The title of my speech is: I will go to my friend’s house tomorrow.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>I am very happy!</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>Because tomorrow I will go to my friend’s house.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>His name is Arnab. He is a very good boy.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>I will wake up in the morning and take a bath,</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>I will wear my favorite clothes,</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>And I will take a small gift for him.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>My mother will help me get ready.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>I am planning everything in advance—</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>What clothes I will wear,</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>What I will take with me,</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>And how I will go there.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>At my friend’s house, we will play,</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>Eat together,</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>And share stories.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>I am very excited.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>Spending time with a friend is so much fun.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>That’s why I am preparing in advance.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>Thank you, everyone!</td><td><button onclick="speak(this)">🔊</button></td></tr>
+    <tr><td>This was my short speech for today.</td><td><button onclick="speak(this)">🔊</button></td></tr>
+
+  </table>
+
+  <script>
+    function speak(button) {
+      const text = button.closest('tr').querySelector('td').innerText;
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'en-US';
+      speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
